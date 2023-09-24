@@ -1,5 +1,10 @@
 <head>
-    <title>websute</title>
+    <title>pictocat from Team Prism</title>
+
+    <link rel="icon" 
+        type="image/png" 
+        href="image/icons/pictocat.png">
+
     <style>
         @font-face { font-family: Rodin; src: url("FOT-NewRodin Pro EB.otf"); } 
         body {
@@ -11,23 +16,35 @@
         }
         .rightcolumn {   
             float: right;
-            width: 72%;
+            width: 75%;
         }
         .leftcolumn {
             float: left;
-            width: 22%;
+            width: 25%;
 
         }
         .card {
             /*background-image: url("https://raw.githubusercontent.com/pictocat/stuff/main/images/background.png");*/
-            border: medium solid white;
+            border: medium solid #fff;
             border-radius: 50px;
 
-            background-color: #fffa;
+            background-color: #ddfc;
 
             font-size: 20px;
             padding: 20px;
             margin-top: 10px;
+        }
+        .flex {
+            display: flex;
+            flex-flow: row wrap;
+  
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: stretch;
+  
+            padding: 0;
+            margin: 0;
+            list-style: none;
         }
         .row:after {
             content: "";
@@ -49,7 +66,7 @@
     <div class="row">
         
         <div class="leftcolumn">
-            <div class="card">
+            <div class="card" style="text-align: center; vertical-align: middle;">
                     <div id="txt"></div>
                     
                 <script>
@@ -69,37 +86,51 @@
                       return i;
                     }
                 </script>
+            </div>
+
+            <div class="card">
                 <ul>
-                    <li><a href="https://team-prism.rocks/@pictocat">Mastodon</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YouTube</a></li>
-                    <li><a href="https://github.com/pictocat/">GitHub</a></li>
-                    <li><a href="https://discord.com/invite/vGwKZep">Team Prism Discord Server</a></li>
-                    <li><a href="https://github.com/pictocat/TTYDButtonLabelsPack">TTYD Alt Controller Labels </a></li>
-                    <li><a href="https://github.com/pictocat/pictocat.github.io">GitHub Repo for this Site</a></li>
+                    <li><img src="image/icons/pictocat.png"> <a href="index.html">Homepage</a></li>
+                    <li><img src="image/icons/mastodon.png"> <a rel="me" href="https://social.team-prism.rocks/@pictocat">Mastodon</a></li>
+                    <li><img src="image/icons/youtube.png"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YouTube</a></li>
+                    <li><img src="image/icons/github.png"> <a href="https://github.com/pictocat/">GitHub</a></li>
+                    <li><img src="image/icons/teamprism.png"> <a href="https://discord.com/invite/vGwKZep">Team Prism Discord Server</a></li>
+                    <li><img src="image/icons/starpoint.png"> <a href="papermario.html">TTYD Alt Buttons Pack</a></li>
+                    <li><img src="image/icons/starpointgithub.png"> <a href="https://github.com/pictocat/TTYDButtonLabelsPack">TTYD Alt Buttons Repo</a></li>
+                    <li><img src="image/icons/github.png"> <a href="https://github.com/pictocat/pictocat.github.io">GitHub Repo for this Site</a></li>
                 </ul>
             </div>
+
             <div class="card">
-                <a href="https://discord.com/invite/vGwKZep"><img src="http://cyber.dabamos.de/88x31/discordserver.gif"></a>
-                <img src="http://cyber.dabamos.de/88x31/cheezit.gif">
-                <a href="https://pictocat.newgrounds.com/"><img src="http://cyber.dabamos.de/88x31/newgrounds.gif"></a>
-                <img src="http://cyber.dabamos.de/88x31/vscbutton.gif">
-                <img src="http://cyber.dabamos.de/88x31/chrmevil.gif">
-                <img src="http://cyber.dabamos.de/88x31/bvbstar.gif">
+                <p></p>
+                <div class="flex">
+                    <a href="https://discord.com/invite/vGwKZep"><img src="http://cyber.dabamos.de/88x31/discordserver.gif"></a>
+                    <a href="https://www.smwcentral.net/"><img src="https://www.smwcentral.net/link/88x31.gif" border="0" alt="SMW Central" title="SMW Central"></a>
+                    <a href="https://open.spotify.com/user/dcvs8tn8inmwb1hap2y41f0vq?si=17b6739b36754ec9"><img src="https://cyber.dabamos.de/88x31/spotify.gif"></a>
+                    <a href="https://pictocat.newgrounds.com/"><img src="http://cyber.dabamos.de/88x31/newgrounds.gif"></a>
+                    <img src="http://cyber.dabamos.de/88x31/vscbutton.gif">
+                    <img src="http://cyber.dabamos.de/88x31/chrmevil.gif">
+                    <img src="http://cyber.dabamos.de/88x31/bvbstar.gif">
+                    <img src="http://cyber.dabamos.de/88x31/cheezit.gif">
+                </div>
+                <p style="text-align: center; font-size: 16;">Please turn off Dark Reader.</p>
             </div>
         </div>
 
         <div class="rightcolumn">
             <div class="card" style="text-align: center; vertical-align: middle;">
-                PICTOCAT
-                <br><a href="https://fryingpan.pages.team-prism.rocks/">Frying☆Pan</a> <-- [Team Prism Web Ring] --> <a href="https://gloopbloop.pages.team-prism.rocks/">GloopBloop</a>
+                <img src="image/icons/pictocat.png"> <a href="https://pictocat.team-prism.rocks/">PICTOCAT</a> <img src="image/icons/pictocat.png">
+                <br><img src="image/icons/frypan.png"> <a href="https://fryingpan.pages.team-prism.rocks/">Frying☆Pan</a> <-- [Team Prism Web Ring] --> <a href="https://gloopbloop.pages.team-prism.rocks/">GloopBloop</a> <img src="image/icons/gloopbloop.png">
 
             </div>
             <div class="card">
                 <p>
-                    <a href="https://www.newgrounds.com/playlists/view/e7fbb586292a18a6a7caa68148167576"><img src="https://art.ngfiles.com/images/3116000/3116307_pictocat_lolobah.png?f1679740110" style="width: 32%;"></a>
-                    <a href="https://store.steampowered.com/app/2026030/twenty_in_total/"><img src="image/librarycapsule.png" style="width: 32%;"></a>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/21UTlsHBLIgAn0rdCqciWG?utm_source=generator" width="32%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </p>
+                    <div class="flex">
+                            <a href="https://www.newgrounds.com/playlists/view/e7fbb586292a18a6a7caa68148167576"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="https://img.ngfiles.com/playlists/sleeves/272000/272589.png?f1681142337"></a>
+                            <a href="https://github.com/pictocat/TTYDButtonLabelsPack"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/banner.png"></a>
+                            <a href="https://www.newgrounds.com/portal/view/891353"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/librarycapsule.png"></a>
+                    </div>
+                </p>    
             </div>
         </div>
 

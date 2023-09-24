@@ -1,0 +1,201 @@
+<head>
+    <title>Paper Mario: TTYD - Alternate Button Labels Pack</title>
+
+    <link rel="icon" 
+        type="image/png" 
+        href="image/icons/starpoint.png">
+
+    <style>
+        @font-face { font-family: Rodin; src: url("FOT-NewRodin Pro EB.otf"); } 
+        body {
+           font-family: Rodin;
+           background-image: url(image/bg.png);
+           color: black;
+           padding: 20px;
+           align-items: center;
+        }
+        .rightcolumn {   
+            float: right;
+            width: 75%;
+        }
+        .leftcolumn {
+            float: left;
+            width: 25%;
+
+        }
+        .card {
+            /*background-image: url("https://raw.githubusercontent.com/pictocat/stuff/main/images/background.png");*/
+            border: medium solid #fff;
+            border-radius: 50px;
+
+            background-color: #fedc;
+
+            font-size: 20px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .flex {
+            display: flex;
+            flex-flow: row wrap;
+  
+            justify-content: center;
+            align-items: center;
+            align-content: stretch;
+  
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {   
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body onload="startTime()">
+    <div class="row">
+        
+        <div class="leftcolumn">
+            <div class="card" style="text-align: center; vertical-align: middle;">
+                <div id="txt"></div>
+                
+                <script>
+                    function startTime() {
+                    const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s + " EST";
+                    setTimeout(startTime, 1000);
+                    }
+                    
+                    function checkTime(i) {
+                    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                    return i;
+                    }
+                </script>
+            </div>
+
+            <div class="card">
+                <ul>
+                    <li><img src="image/icons/pictocat.png"> <a href="index.html">Homepage</a></li>
+                    <li><img src="image/icons/mastodon.png"> <a rel="me" href="https://social.team-prism.rocks/@pictocat">Mastodon</a></li>
+                    <li><img src="image/icons/youtube.png"> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">YouTube</a></li>
+                    <li><img src="image/icons/github.png"> <a href="https://github.com/pictocat/">GitHub</a></li>
+                    <li><img src="image/icons/teamprism.png"> <a href="https://discord.com/invite/vGwKZep">Team Prism Discord Server</a></li>
+                    <li><img src="image/icons/starpoint.png"> <a href="papermario.html">TTYD Alt Buttons Pack</a></li>
+                    <li><img src="image/icons/starpointgithub.png"> <a href="https://github.com/pictocat/TTYDButtonLabelsPack">TTYD Alt Buttons Repo</a></li>
+                    <li><img src="image/icons/github.png"> <a href="https://github.com/pictocat/pictocat.github.io">GitHub Repo for this Site</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <p></p>
+                <div class="flex">
+                    <a href="https://discord.com/invite/vGwKZep"><img src="http://cyber.dabamos.de/88x31/discordserver.gif"></a>
+                    <a href="https://www.smwcentral.net/"><img src="https://www.smwcentral.net/link/88x31.gif" border="0" alt="SMW Central" title="SMW Central"></a>
+                    <a href="https://open.spotify.com/user/dcvs8tn8inmwb1hap2y41f0vq?si=17b6739b36754ec9"><img src="https://cyber.dabamos.de/88x31/spotify.gif"></a>
+                    <a href="https://pictocat.newgrounds.com/"><img src="http://cyber.dabamos.de/88x31/newgrounds.gif"></a>
+                    <img src="http://cyber.dabamos.de/88x31/vscbutton.gif">
+                    <img src="http://cyber.dabamos.de/88x31/chrmevil.gif">
+                    <img src="http://cyber.dabamos.de/88x31/bvbstar.gif">
+                    <img src="http://cyber.dabamos.de/88x31/cheezit.gif">
+                </div>
+                <p style="text-align: center; font-size: 16;">Please turn off Dark Reader.</p>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card" style="text-align: center; vertical-align: middle;">
+                <img src="image/icons/pictocat.png"> <a href="https://pictocat.team-prism.rocks/">PICTOCAT</a> <img src="image/icons/pictocat.png">
+                <br><img src="image/icons/frypan.png"> <a href="https://fryingpan.pages.team-prism.rocks/">Frying☆Pan</a> <-- [Team Prism Web Ring] --> <a href="https://gloopbloop.pages.team-prism.rocks/">GloopBloop</a> <img src="image/icons/gloopbloop.png">
+
+            </div>
+
+            <div id="contents" class="card">
+                <h1 style="text-align: center;">TTYD Controller Icons Pack</h1>
+
+                <p style="text-align:center;"><a href="https://github.com/pictocat/TTYDButtonLabelsPack"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/banner.png"></a></p>
+                <p style="text-align:center;">This is a texture pack for Paper Mario: The Thousand-Year Door that has button labels for other controllers that one might use while emulating the game, such as the DualShock 4, JoyCon, Switch Pro Controller, or Steam Deck.</p>
+                
+                <ul>
+                  <li><a href="#contents">Contents</a></li>
+                  <li><a href="#installation">Installation</a></li>
+                  <ul>
+                    <li><a href="#windows">Windows</a></li>
+                    <li><a href="#linux">Linux</a></li>
+                  </ul>
+                  <li><a href="#screenshots">Screenshots</a></li>
+                </ul>
+            </div>
+
+            <div id="installation" class="card">
+                <h1 style="text-align: center;">Installation:</h1> 
+                
+                <div id="windows"><h2 style="text-align: center;">Windows:</h2></div>
+                    <h3 style="text-align: center;">Manual Installation:</h3>
+                    <ul>
+                        <li>Download the files from the <a href="https://github.com/pictocat/TTYDButtonLabelsPack">GitHub Repository</a> as a .zip</li>
+                        <p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/tut_1.png"></p>
+                        <li>Open your chosen platform's folder. Place the folder called "G8ME01" into "C:\Users\(user)\Documents\Dolphin Emulator\Load\Textures\"</li>
+                        <p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/tut_2.png"></p>
+                        <li>In the "G8ME01" folder, it should look something like this:</li>
+                        <p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/tut_3.png"></p>
+                        <li>In Dolphin, make sure "Load Custom Textures" is turned on in Graphics > Advanced > Utility</li>
+                        <p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/tut_4.png"></p>
+                        <li>Run the game and make sure it works. If it does, then that's all you have to do.</li> 
+                        <li>If it didn't work, or your Dolphin user folder is in a different place, consider asking for help at <a href="https://discord.com/invite/vGwKZep">the Team Prism Discord Server</a>. Just ping me @pictocat! :-)</li> 
+                    </ul>
+          
+                <p></p>
+
+                <div id="linux"><h2 style="text-align: center;">Linux / Steam Deck:</h2></div>
+                    <p style="text-align: center;">Note: I do not own a Steam Deck, so I cannot verify that this works...But it probably does.</p>
+                    <h3 style="text-align: center;">Manual Installation:</h3>
+                    <ul>
+                       <li>Download the files from the <a href="https://github.com/pictocat/TTYDButtonLabelsPack">GitHub Repository</a> as a .zip</li>
+                       <p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/tut_1.png"></p>
+                       <li>Open your chosen platform's folder. Place the folder called "G8ME01" into "~/.local/share/dolphin-emu/Load/Textures/"</li>
+                       <p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/tut_2_linux.png"></p>
+                       <li>In the "G8ME01" folder, it should look something like this:</li>
+                       <p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/tut_3_linux.png"></p>
+                       <li>In Dolphin, make sure "Load Custom Textures" is turned on in Graphics > Advanced > Utility</li>
+                       <p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/tut_4_linux.png"></p>
+                       <li>Run the game and make sure it works. If it does, then that's all you have to do.</li> 
+                       <li>If it didn't work, or your Dolphin user folder is in a different place, consider asking for help at <a href="https://discord.com/invite/vGwKZep">the Team Prism Discord Server</a>. Just ping me @pictocat! :-)</li> 
+                    </ul>   
+               </div>
+              
+               <div id="screenshots" class="card">
+
+                    <h1 style="text-align: center;">Screenshots:</h1>
+                    <p style="text-align: center;">Hover over images for more information.</p>
+                    <div class="flex">
+                        <div title="DS4 buttons demonstrated with the pause menu."><p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/menu1.png"></p></div>
+                        <div title="DS4 buttons demonstrated on the party members menu."><p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/menu2.png"></p></div>
+                        <div title="DS4 buttons demonstrated with the swap party members in-battle prompt."><p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/swap.png"></p></div>
+                        <div title="DS4 buttons demonstrated with the status screen d-pad."><p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/dpad.png"></p></div>
+                        <div title="DS4 buttons demonstrated with Peach dancing with herself like a boss."><p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/dance.png"></p></div>
+                        <div title="Steam Deck/Switch buttons demonstrated in battle."><p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/jump.png"></p></div>
+                        <div title="Steam Deck/Switch buttons demonstrated in battle. (Note that the X and Y buttons are slightly raised - this has been fixed.)"><p style="text-align:center;"><img style="border-radius: 4px; border-color: black; border-style: solid; border-width: 4px; box-shadow: 5px 5px 5px black;" src="image/papermario/screenshots/vivian.png"></p></div>
+                    </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+
+
+</body>
